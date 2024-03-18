@@ -2,6 +2,7 @@
 #include <vector>
 std::vector<int> roll(int index, std::vector<int> vec)
 {
+    /* ^^^_  cherz_zhopu_palochkoy_mode activated _^^^*/
 int note = index;
 while (index < vec.size()-1)
 {
