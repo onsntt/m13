@@ -33,14 +33,17 @@ int main()
     std::cout << "Enter value for pop_back: ";
     int value;
     std::cin >> value;
-    int pos=0;
-    for (pos; pos < count; pos++)
-    {
+    int pos=-1;
+    for (pos = -1; pos < count; pos++)
+    {    
+        
         if (vec[pos] == value )
         {
             vec = roll(pos, vec);
             vec.pop_back();
+            
             count -=1;
+            pos = -1;
         }
     }
     
